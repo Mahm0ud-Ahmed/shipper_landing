@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-@mixin transition($duration: 0.3s) {
+@mixin transition($duration...) {
   transition: $duration;
   -webkit-transition: $duration;
   -moz-transition: $duration;
@@ -85,4 +85,3 @@
   animation: $value;
   -webkit-animation: $value;
 }
-

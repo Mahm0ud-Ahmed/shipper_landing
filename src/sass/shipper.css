@@ -35,6 +35,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .row-flex {
@@ -47,7 +48,7 @@ a {
   flex-direction: column;
 }
 
-.f-center {
+.center {
   justify-content: center;
   align-items: center;
 }
@@ -98,5 +99,200 @@ a {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+.header {
+  background-color: #FFF8F8;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-block: 1.4rem;
+}
+.header .app-bar {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+}
+.header .app-bar .logo img {
+  height: 100%;
+  width: 120px;
+}
+@media screen and (max-width: 991px) {
+  .header .app-bar .logo img {
+    width: 90px;
+  }
+}
+.header .app-bar .links nav {
+  margin-left: 4rem;
+}
+@media screen and (max-width: 991px) {
+  .header .app-bar .links nav {
+    display: none;
+  }
+}
+.header .app-bar .links nav ul li {
+  font-size: 1.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.header .app-bar .links nav ul li:hover::before {
+  width: 100%;
+  right: 0;
+}
+.header .app-bar .links nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 0;
+  height: 3px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
+}
+.header .app-bar .links nav ul li:not(:last-child) {
+  margin-left: 2rem;
+}
+.header .app-bar .links nav ul li a:hover {
+  color: #E32127;
+}
+.header .app-bar .links .actions {
+  gap: 2rem;
+}
+.header .app-bar .links .actions button {
+  height: 56px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #515151;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.header .app-bar .links .actions .lang {
+  width: 86px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.header .app-bar .links .actions .lang:hover {
+  border: none;
+  background-color: #E32127;
+  color: #ffffff;
+}
+.header .app-bar .links .actions .lang img {
+  width: 32px;
+  height: 100%;
+  margin-left: 4px;
+}
+.header .app-bar .links .actions .connect {
+  width: 150px;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 52px;
+  background-color: #E32127;
+  color: #ffffff;
+  position: relative;
+  transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+}
+.header .app-bar .links .actions .connect::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url("../assets/border_btn.svg");
+}
+.header .app-bar .links .actions .connect:hover {
+  box-shadow: 0 0 12px #E32127;
+}
+.header .welcome-head {
+  min-height: calc(100vh - 2.8rem - 8vh);
+}
+.header .welcome-head .welcome-content {
+  flex-basis: 50%;
+}
+@media screen and (max-width: 991px) {
+  .header .welcome-head .welcome-content {
+    flex-basis: 100%;
+  }
+}
+.header .welcome-head .welcome-content h2 {
+  font-weight: 500;
+}
+.header .welcome-head .welcome-content .welcome-msg {
+  margin-bottom: 2rem;
+}
+.header .welcome-head .welcome-content .welcome-msg span {
+  color: #E32127;
+}
+@media screen and (max-width: 991px) {
+  .header .welcome-head .welcome-content .welcome-msg {
+    text-align: center;
+  }
+}
+.header .welcome-head .download-app {
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .header .welcome-head .download-app {
+    flex-direction: column;
+  }
+  .header .welcome-head .download-app > div:first-child {
+    margin-bottom: 2rem;
+  }
+}
+.header .welcome-head .download-app h2 {
+  color: #E32127;
+  margin-bottom: 1rem;
+}
+.header .welcome-head .download-app > div {
+  flex-basis: 48%;
+}
+.header .welcome-head .download-app > div button {
+  width: 90%;
+  height: 52px;
+  padding: 8px;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+}
+.header .welcome-head .download-app > div button:not(:last-child) {
+  margin-left: 0.5rem;
+}
+.header .welcome-head .download-app > div button img {
+  width: 85%;
+}
+.header .welcome-head .welcome-img {
+  flex-basis: 50%;
+}
+.header .welcome-head .welcome-img img {
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .header .welcome-head .welcome-img {
+    display: none;
   }
 }/*# sourceMappingURL=shipper.css.map */

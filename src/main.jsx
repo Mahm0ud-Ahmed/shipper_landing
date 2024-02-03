@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import ShipperApp from "./ShipperApp.jsx";
+
 import "./sass/vendors/normalize.css";
 import "./sass/shipper.css";
 
