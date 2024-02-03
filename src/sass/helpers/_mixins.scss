@@ -1,0 +1,88 @@
+@use "./variables" as *;
+
+@mixin transition($duration: 0.3s) {
+  transition: $duration;
+  -webkit-transition: $duration;
+  -moz-transition: $duration;
+  -ms-transition: $duration;
+  -o-transition: $duration;
+}
+
+@mixin transform($type, $origin: center) {
+  transform: $type;
+  -webkit-transform: $type;
+  -moz-transform: $type;
+  -ms-transform: $type;
+  -o-transform: $type;
+  transform-origin: $origin;
+}
+
+@mixin radius($radius: 50%) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+@mixin v_small_screen() {
+  @media screen and ($v_small_screen_width) {
+    @content;
+  }
+}
+
+@mixin small_screen() {
+  @media screen and ($small_max_screen_width) {
+    @content;
+  }
+}
+
+@mixin medium_screen($screen_width: $medium_max_screen_width) {
+  @media screen and ($screen_width) {
+    @content;
+  }
+}
+
+@mixin break-point($pointName) {
+  @if ($pointName == VS) {
+    @include v-small_screen() {
+      @content;
+    }
+  } @else if($pointName == S) {
+    @include small_screen() {
+      @content;
+    }
+  } @else if($pointName == M) {
+    @include medium_screen() {
+      @content;
+    }
+  } @else if($pointName == L) {
+    @media screen and ($large_min_screen_width) {
+      @content;
+    }
+  }
+}
+
+@mixin animate_element($animateName) {
+  @keyframes #{$animateName} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$animateName} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animateName} {
+    @content;
+  }
+
+  @-o-keyframes #{$animateName} {
+    @content;
+  }
+}
+
+@mixin implement_animation($value...) {
+  animation: $value;
+  -webkit-animation: $value;
+}
+

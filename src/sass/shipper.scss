@@ -1,0 +1,6 @@
+// Import _base.scss File which Store _container.scss & _reset.scss Files 
+@use "./base/base";
+@use "./sections/section";
+@use "./components/component";
+
+
