@@ -127,10 +127,20 @@
 
   .welcome-head {
     min-height: calc(100vh - (($padding_large * 0.7) * 2) - 8vh);
+    @include break-point(S) {
+      flex-direction: column;
+      .welcome-img{
+        flex-basis: 30%;
+        img{
+          height: 420px;
+        }
+      }
+    }
     .welcome-content {
       flex-basis: 50%;
-      @include break-point(S){
+      @include break-point(S) {
         flex-basis: 100%;
+        order: 1;
       }
 
       h2 {
@@ -141,53 +151,69 @@
         span {
           color: $red_color;
         }
-        @include break-point(S){
+        h2{
+          color: $disabled-color;
+        }
+        @include break-point(S) {
           text-align: center;
         }
       }
-    }
 
-    .download-app {
-      justify-content: space-between;
-      @include break-point(S){
-        flex-direction: column;
-        > div:first-child{
-          margin-bottom: $padding_large;
-        }
-      }
-      h2 {
-        color: $red_color;
-        margin-bottom: calc($padding_large /2);
-      }
-      > div {
-        flex-basis: 48%;
-        button {
-          width: 90%;
-          height: 52px;
-          padding: 8px;
-          background-color: $reverse-main_color;
-          border: none;
-          @include radius(100px);
-          cursor: pointer;
-          &:not(:last-child){
-            margin-left: .5rem;
-          }
-
-          img {
-            width: 85%;
+      .download-app {
+        justify-content: space-between;
+        @include break-point(VS) {
+          flex-direction: column;
+          > div:first-child {
+            margin-bottom: $padding_large;
           }
         }
+        h2 {
+          color: $red_color;
+          margin-bottom: calc($padding_large / 2);
+        }
+        > div {
+          flex-basis: 48%;
+          button {
+            width: 90%;
+            height: 52px;
+            padding: 8px;
+            background-color: $reverse-main_color;
+            border: none;
+            @include radius(100px);
+            cursor: pointer;
+            &:not(:last-child) {
+              margin-left: 0.5rem;
+            }
+  
+            img {
+              width: 85%;
+            }
+          }
+        }
       }
     }
+
+
 
     .welcome-img {
       flex-basis: 50%;
       img {
         width: 100%;
+        @include implement_animation(mov-up-down 5s alternate infinite linear);
       }
-      @include break-point(S){
+      @include break-point(VS) {
         display: none;
       }
     }
+  }
+}
+
+@include animate_element(mov-up-down) {
+  0%,
+  100% {
+    @include transform(translateY(30px));
+  }
+  50% {
+    @include transform(translateY(-50px));
   }
 }
