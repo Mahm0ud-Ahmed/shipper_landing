@@ -331,4 +331,85 @@ a {
     -o-transform: translateY(-50px);
     transform-origin: center;
   }
+}
+.why-shipper {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.why-shipper .container {
+  min-height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .why-shipper .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .why-shipper .container .shipper-truck img {
+    height: 420px;
+  }
+}
+.why-shipper .shipper-truck {
+  flex-basis: 48%;
+}
+@media screen and (max-width: 576px) {
+  .why-shipper .shipper-truck {
+    display: none;
+  }
+}
+.why-shipper .shipper-truck img {
+  min-width: 100%;
+  height: 520px;
+}
+.why-shipper .why-content {
+  flex-basis: 45%;
+}
+.why-shipper .why-content h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.why-shipper .why-content h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
+}
+.why-shipper .why-content h2 + p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #515151;
+  margin-bottom: 2rem;
+  line-height: 40px;
+}
+.why-shipper .why-content .achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+}
+.why-shipper .why-content .achievements .item {
+  flex-basis: 280px;
+}
+.why-shipper .why-content .achievements .item .info {
+  margin-right: 1rem;
+}
+.why-shipper .why-content .achievements .item .info p:first-child {
+  color: #E32127;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.why-shipper .why-content .achievements .item .info p:last-child {
+  font-size: 1.2rem;
+  color: #515151;
 }/*# sourceMappingURL=shipper.css.map */
