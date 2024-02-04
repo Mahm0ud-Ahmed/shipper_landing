@@ -29,6 +29,7 @@
         ul {
           li {
             font-size: $normal_text_size;
+            width: -moz-fit-content;
             width: fit-content;
             position: relative;
             overflow: hidden;
@@ -147,7 +148,7 @@
         font-weight: 500;
       }
       .welcome-msg {
-        margin-bottom: $padding_large;
+        margin-bottom: calc($padding_large * 2.5);
         span {
           color: $red_color;
         }
