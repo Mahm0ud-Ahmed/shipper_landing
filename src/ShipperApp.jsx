@@ -1,4 +1,5 @@
 import Header from "./component/header/Header";
+import OrderSteps from "./component/order_steps/OrderSteps";
 import ShipmentStep from "./component/shipment_step/ShipmentStep";
 import WhyShipper from "./component/why_shipper/WhyShipper";
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <WhyShipper/>
       <ShipmentStep />
+      <OrderSteps />
     </div>
   );
 }

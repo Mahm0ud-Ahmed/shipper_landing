@@ -1,0 +1,72 @@
+@use "../helpers/index" as *;
+
+.order-steps {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: calc($padding_large * 1.2);
+    margin-top: calc($padding_large * 4);
+    color: $reverse-main_color;
+    .instructions {
+      h2 {
+        position: relative;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-bottom: $padding_large;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          width: 100%;
+          height: 4px;
+          @include radius(100px);
+          background: linear-gradient(
+            to left,
+            $red_color 0%,
+            $red_color 20%,
+            transparent 20%,
+            transparent 30%,
+            $red_color 30%,
+            $red_color 100%
+          );
+        }
+      }
+    }
+
+    .item {
+      height: 320px;
+      border: $disabled-color solid 1px;
+      justify-content: space-between;
+      align-items: center;
+      padding: $padding_large;
+      @include radius($padding_large);
+      position: relative;
+      background-color: $main-color;
+      &::before {
+        content: "0" attr(data-index);
+        position: absolute;
+        top: -25px;
+        z-index: -1;
+        right: -25px;
+        font-weight: 900;
+        width: -moz-fit-content;
+        width: fit-content;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px black;
+        font-size: calc($xl_font_size * 1.5);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      img {
+        height: 180px;
+        width: 100%;
+        margin-bottom: $padding_large;
+      }
+    }
+  }
+}
