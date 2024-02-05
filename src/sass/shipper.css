@@ -156,15 +156,7 @@ a {
   width: 0;
   height: 3px;
   transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
 }
 .header .app-bar .links nav ul li:not(:last-child) {
@@ -182,10 +174,6 @@ a {
   border: none;
   border: 1px solid #515151;
   border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
   cursor: pointer;
   font-family: inherit;
 }
@@ -214,10 +202,6 @@ a {
   color: #ffffff;
   position: relative;
   transition: box-shadow 0.3s;
-  -webkit-transition: box-shadow 0.3s;
-  -moz-transition: box-shadow 0.3s;
-  -ms-transition: box-shadow 0.3s;
-  -o-transition: box-shadow 0.3s;
 }
 .header .app-bar .links .actions .connect::before {
   content: "";
@@ -296,10 +280,6 @@ a {
   background-color: #000;
   border: none;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   cursor: pointer;
 }
 .header .welcome-head .welcome-content .download-app > div button:not(:last-child) {
@@ -314,7 +294,6 @@ a {
 .header .welcome-head .welcome-img img {
   width: 100%;
   animation: mov-up-down 5s alternate infinite linear;
-  -webkit-animation: mov-up-down 5s alternate infinite linear;
 }
 @media screen and (max-width: 576px) {
   .header .welcome-head .welcome-img {
@@ -325,18 +304,10 @@ a {
 @keyframes mov-up-down {
   0%, 100% {
     transform: translateY(30px);
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
     transform-origin: center;
   }
   50% {
     transform: translateY(-50px);
-    -webkit-transform: translateY(-50px);
-    -moz-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
-    -o-transform: translateY(-50px);
     transform-origin: center;
   }
 }
@@ -386,10 +357,6 @@ a {
   width: 100%;
   height: 4px;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
 }
 .why-shipper .why-content .achievements {
@@ -450,10 +417,6 @@ a {
   width: 100%;
   height: 4px;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
 }
 .shipment-steps .container .intro p {
@@ -471,23 +434,11 @@ a {
   box-shadow: 0 0 1rem #ddd;
   padding: 2rem;
   border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
   cursor: default;
   transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
 }
 .shipment-steps .container .steps .item:hover {
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
   transform-origin: center;
 }
 .shipment-steps .container .steps .item img {
@@ -531,10 +482,6 @@ a {
   width: 100%;
   height: 4px;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
 }
 .order-steps .container .item {
@@ -544,10 +491,6 @@ a {
   align-items: center;
   padding: 2rem;
   border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
   position: relative;
   background-color: #ffffff;
 }
