@@ -253,39 +253,6 @@ a {
     text-align: center;
   }
 }
-.header .welcome-head .welcome-content .download-app {
-  justify-content: space-between;
-}
-@media screen and (max-width: 576px) {
-  .header .welcome-head .welcome-content .download-app {
-    flex-direction: column;
-  }
-  .header .welcome-head .welcome-content .download-app > div:first-child {
-    margin-bottom: 2rem;
-  }
-}
-.header .welcome-head .welcome-content .download-app h2 {
-  color: #E32127;
-  margin-bottom: 1rem;
-}
-.header .welcome-head .welcome-content .download-app > div {
-  flex-basis: 48%;
-}
-.header .welcome-head .welcome-content .download-app > div button {
-  width: 90%;
-  height: 52px;
-  padding: 8px;
-  background-color: #000;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-}
-.header .welcome-head .welcome-content .download-app > div button:not(:last-child) {
-  margin-left: 0.5rem;
-}
-.header .welcome-head .welcome-content .download-app > div button img {
-  width: 85%;
-}
 .header .welcome-head .welcome-img {
   flex-basis: 50%;
 }
@@ -462,9 +429,9 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  gap: 2.4rem;
-  margin-top: 8rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6rem;
+  margin-top: 10rem;
   color: #000;
 }
 .order-steps .container .instructions h2 {
@@ -503,11 +470,44 @@ a {
   width: fit-content;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px black;
-  font-size: 3.75rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
 }
 .order-steps .container .item img {
   height: 180px;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.download-app {
+  justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .download-app {
+    flex-direction: column;
+  }
+  .download-app > div:first-child {
+    margin-bottom: 2rem;
+  }
+}
+.download-app h2 {
+  color: #E32127;
+  margin-bottom: 1rem;
+}
+.download-app > div {
+  flex-basis: 48%;
+}
+.download-app > div button {
+  width: 90%;
+  height: 52px;
+  padding: 8px;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.download-app > div button:not(:last-child) {
+  margin-left: 0.5rem;
+}
+.download-app > div button img {
+  width: 85%;
 }/*# sourceMappingURL=shipper.css.map */

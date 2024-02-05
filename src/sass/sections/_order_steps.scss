@@ -8,9 +8,9 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: calc($padding_large * 1.2);
-    margin-top: calc($padding_large * 4);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: calc($padding_large * 3);
+    margin-top: calc($padding_large * 5);
     color: $reverse-main_color;
     .instructions {
       h2 {
@@ -58,8 +58,7 @@
         width: fit-content;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px black;
-        font-size: calc($xl_font_size * 1.5);
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: calc($xl_font_size * 1.8);
       }
 
       img {
