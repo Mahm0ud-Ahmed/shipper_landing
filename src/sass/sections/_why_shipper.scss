@@ -53,14 +53,6 @@
       }
     }
 
-    h2 + p {
-      font-weight: 300;
-      font-size: $l_font_size;
-      color: $disabled_color;
-      margin-bottom: $padding_large;
-      line-height: 40px;
-    }
-
     .achievements {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

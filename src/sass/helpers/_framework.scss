@@ -1,31 +1,39 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .row-flex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .col-flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
-    font-size: $xl_font_size;
-    font-weight: bold;
+  font-size: $xl_font_size;
+  font-weight: bold;
 }
 
 .h2 {
-    font-size: calc($xl_font_size / 1.3);
-    font-weight: bold;
+  font-size: calc($xl_font_size / 1.3);
+  font-weight: bold;
+}
+
+.h2-m {
+  font-weight: 300;
+  font-size: $l_font_size;
+  color: $disabled_color;
+  margin-bottom: $padding_large;
+  line-height: 40px;
 }
 
 .medium-head {
-    font-size: $l_font_size;
-    font-weight: bold;
+  font-size: $l_font_size;
+  font-weight: bold;
 }
