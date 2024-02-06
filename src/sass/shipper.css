@@ -528,30 +528,9 @@ a {
 .connect-us .container .connect .connect-content .msg p {
   margin: 0;
 }
-.connect-us .container .connect .connect-content .social a {
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  margin-left: 1rem;
-  border: #515151 solid 1px;
-  border-radius: 50%;
-  padding: 2px;
-  text-align: center;
-  position: relative;
-  transition: 0.3s;
-}
 .connect-us .container .connect .connect-content .social a:hover {
   box-shadow: 0 0 1.5rem #E32127;
   transform: scale(1.1);
-  transform-origin: center;
-}
-.connect-us .container .connect .connect-content .social a img {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: calc(50% - 16px);
-  left: 50%;
-  transform: translateX(-50%);
   transform-origin: center;
 }
 .connect-us .container .connect .connect-form {
@@ -687,6 +666,97 @@ a {
   left: 0;
 }
 
+.footer {
+  min-height: 50vh;
+  min-width: 100vw;
+  background-color: #FFF8F8;
+  margin-top: 6rem;
+  justify-content: space-between;
+}
+.footer .container:not(.rights-reserved .container) {
+  padding-top: 4rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content {
+  gap: 10%;
+  align-items: flex-start;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-text {
+  width: 40%;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-text .logo {
+  width: 120px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-text .logo img {
+  height: 100%;
+  width: 100%;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-text p {
+  font-size: 1.2rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us {
+  width: 50%;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 100px;
+  background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us .address .item {
+  align-items: center;
+  margin-bottom: 1.6666666667rem;
+  font-size: 1.2rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us .address .item img {
+  height: 100%;
+  width: 38px;
+  margin-left: 1.3333333333rem;
+}
+.footer .container:not(.rights-reserved .container) .address-content .footer-connect-us .address .item a:hover {
+  color: #E32127;
+  text-decoration: underline;
+}
+.footer .rights-reserved {
+  border-top: #515151 solid 1px;
+  height: 56px;
+}
+.footer .rights-reserved .container {
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .footer .rights-reserved .container p {
+    font-size: 0.8rem;
+  }
+}
+.footer .rights-reserved .container .social a {
+  width: 28px;
+  height: 28px;
+  border-color: #E32127;
+}
+@media screen and (max-width: 576px) {
+  .footer .rights-reserved .container .social a {
+    margin-left: 0.5rem;
+  }
+}
+.footer .rights-reserved .container .social a img {
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+}
+
 .download-app {
   justify-content: space-between;
 }
@@ -719,4 +789,26 @@ a {
 }
 .download-app > div button img {
   width: 85%;
+}
+
+.social a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-left: 1rem;
+  border: #515151 solid 1px;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+.social a img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: calc(50% - 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center;
 }/*# sourceMappingURL=shipper.css.map */

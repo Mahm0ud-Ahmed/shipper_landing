@@ -17,7 +17,7 @@
         @include break-point(S) {
           width: 100%;
           text-align: center;
-          h2{
+          h2 {
             margin: 0 auto;
           }
         }
@@ -50,32 +50,9 @@
             margin: 0;
           }
         }
-
-        .social {
-          a {
-            display: inline-block;
-            width: 56px;
-            height: 56px;
-            margin-left: 1rem;
-            border: $disabled-color solid 1px;
-            @include radius;
-            padding: 2px;
-            text-align: center;
-            position: relative;
-            @include transition(0.3s);
-            &:hover {
-              box-shadow: 0 0 1.5rem $red_color;
-              @include transform(scale(1.1));
-            }
-            img {
-              position: absolute;
-              width: 32px;
-              height: 32px;
-              top: calc(50% - (32px / 2));
-              left: 50%;
-              @include transform(translateX(-50%));
-            }
-          }
+        .social a:hover {
+          box-shadow: 0 0 1.5rem $red_color;
+          @include transform(scale(1.1));
         }
       }
 
@@ -179,7 +156,7 @@
       overflow: hidden;
       padding: $padding_large;
       @include radius($padding_large);
-      
+
       .download-content {
         flex-basis: 60%;
         @include break-point(S) {

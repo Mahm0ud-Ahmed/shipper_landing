@@ -1,6 +1,5 @@
 @use "../helpers/index" as *;
 
-
 .download-app {
   justify-content: space-between;
   @include break-point(VS) {
@@ -30,6 +29,32 @@
       img {
         width: 85%;
       }
+    }
+  }
+}
+
+// Social Component
+
+.social {
+  a {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin-left: 1rem;
+    border: $disabled-color solid 1px;
+    @include radius;
+    padding: 2px;
+    text-align: center;
+    position: relative;
+    @include transition(0.3s);
+    
+    img {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: calc(50% - (32px / 2));
+      left: 50%;
+      @include transform(translateX(-50%));
     }
   }
 }
