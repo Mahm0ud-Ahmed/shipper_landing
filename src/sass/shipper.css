@@ -478,6 +478,215 @@ a {
   margin-bottom: 2rem;
 }
 
+.connect-us {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.connect-us .container {
+  padding-top: 10rem;
+}
+.connect-us .container .connect {
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .connect-us .container .connect {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.connect-us .container .connect .connect-content {
+  flex-basis: 40%;
+}
+@media screen and (max-width: 991px) {
+  .connect-us .container .connect .connect-content {
+    width: 100%;
+    text-align: center;
+  }
+  .connect-us .container .connect .connect-content h2 {
+    margin: 0 auto;
+  }
+}
+.connect-us .container .connect .connect-content h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.connect-us .container .connect .connect-content h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 100px;
+  background: linear-gradient(to left, #E32127 0%, #E32127 20%, transparent 20%, transparent 30%, #E32127 30%, #E32127 100%);
+}
+.connect-us .container .connect .connect-content .msg {
+  margin-bottom: 2rem;
+}
+.connect-us .container .connect .connect-content .msg p {
+  margin: 0;
+}
+.connect-us .container .connect .connect-content .social a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-left: 1rem;
+  border: #515151 solid 1px;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+.connect-us .container .connect .connect-content .social a:hover {
+  box-shadow: 0 0 1.5rem #E32127;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+.connect-us .container .connect .connect-content .social a img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: calc(50% - 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center;
+}
+.connect-us .container .connect .connect-form {
+  flex-basis: 58%;
+}
+@media screen and (max-width: 991px) {
+  .connect-us .container .connect .connect-form {
+    width: 100%;
+  }
+}
+.connect-us .container .connect .connect-form .user-info {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.connect-us .container .connect .connect-form .user-info input {
+  width: 48%;
+  height: 50px;
+  border: none;
+  border-bottom: #515151 solid 1px;
+  padding-right: 38px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: inherit;
+}
+.connect-us .container .connect .connect-form .user-info input:focus {
+  outline: none;
+  border-bottom-width: 2px;
+}
+.connect-us .container .connect .connect-form .user-info input:first-child {
+  background: url(../assets/user.svg) no-repeat scroll right center;
+  background-size: 32px;
+}
+.connect-us .container .connect .connect-form .user-info input:last-child {
+  background: url(../assets/phone.svg) no-repeat scroll right center;
+  background-size: 32px;
+}
+.connect-us .container .connect .connect-form textarea {
+  border: none;
+  border-bottom: #515151 solid 1px;
+  margin-bottom: 2rem;
+  resize: none;
+  overflow: auto;
+  height: 60px;
+  background: url(../assets/pen.svg) no-repeat scroll right center;
+  background-size: 32px;
+  padding-right: 38px;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: inherit;
+}
+.connect-us .container .connect .connect-form textarea:focus {
+  outline: none;
+  border-bottom-width: 2px;
+}
+.connect-us .container .connect .connect-form button {
+  width: 200px;
+  height: 56px;
+  border: none;
+  background-color: #E32127;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  font-family: inherit;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  border-radius: 100px;
+}
+.connect-us .container .connect .connect-form button::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url("../assets/border_btn.svg");
+}
+.connect-us .container .connect .connect-form button::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  background: no-repeat url("../assets/send.svg");
+  background-size: 28px;
+  width: 38px;
+  height: 38px;
+  transform: translateY(-40%);
+  transform-origin: center;
+}
+.connect-us .container .connect .connect-form button:hover {
+  box-shadow: 0 0 12px #E32127;
+}
+.connect-us .container .store-app {
+  background-color: #FFF8F8;
+  margin-top: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.connect-us .container .store-app .download-content {
+  flex-basis: 60%;
+}
+@media screen and (max-width: 991px) {
+  .connect-us .container .store-app .download-content {
+    flex-basis: 100%;
+  }
+}
+.connect-us .container .store-app .download-content h2 {
+  margin-bottom: 1rem;
+}
+.connect-us .container .store-app .download-content p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.connect-us .container .store-app .mobile {
+  flex-basis: 35%;
+  height: 320px;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  .connect-us .container .store-app .mobile {
+    display: none;
+  }
+}
+.connect-us .container .store-app .mobile img {
+  height: 100%;
+  position: absolute;
+  bottom: -2.3rem;
+  left: 0;
+}
+
 .download-app {
   justify-content: space-between;
 }

@@ -1,0 +1,212 @@
+@use "../helpers/index" as *;
+
+.connect-us {
+  min-height: 100vh;
+  min-width: 100vw;
+  .container {
+    padding-top: calc($padding_large * 5);
+    .connect {
+      justify-content: space-between;
+      @include break-point(S) {
+        flex-direction: column;
+        align-items: center;
+        gap: $padding_large;
+      }
+      .connect-content {
+        flex-basis: 40%;
+        @include break-point(S) {
+          width: 100%;
+          text-align: center;
+          h2{
+            margin: 0 auto;
+          }
+        }
+        h2 {
+          position: relative;
+          width: -moz-fit-content;
+          width: fit-content;
+          margin-bottom: $padding_large;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            @include radius(100px);
+            background: linear-gradient(
+              to left,
+              $red_color 0%,
+              $red_color 20%,
+              transparent 20%,
+              transparent 30%,
+              $red_color 30%,
+              $red_color 100%
+            );
+          }
+        }
+        .msg {
+          margin-bottom: $padding_large;
+          p {
+            margin: 0;
+          }
+        }
+
+        .social {
+          a {
+            display: inline-block;
+            width: 56px;
+            height: 56px;
+            margin-left: 1rem;
+            border: $disabled-color solid 1px;
+            @include radius;
+            padding: 2px;
+            text-align: center;
+            position: relative;
+            @include transition(0.3s);
+            &:hover {
+              box-shadow: 0 0 1.5rem $red_color;
+              @include transform(scale(1.1));
+            }
+            img {
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              top: calc(50% - (32px / 2));
+              left: 50%;
+              @include transform(translateX(-50%));
+            }
+          }
+        }
+      }
+
+      .connect-form {
+        flex-basis: 58%;
+        @include break-point(S) {
+          width: 100%;
+        }
+        .user-info {
+          width: 100%;
+          justify-content: space-between;
+          margin-bottom: calc($padding_large * 1.5);
+          input {
+            width: 48%;
+            height: 50px;
+            border: none;
+            border-bottom: $disabled-color solid 1px;
+            padding-right: 38px;
+            font-size: $normal_text_size;
+            font-weight: 300;
+            font-family: inherit;
+            &:focus {
+              outline: none;
+              border-bottom-width: 2px;
+            }
+            &:first-child {
+              background: url(../assets/user.svg) no-repeat scroll right center;
+              background-size: 32px;
+            }
+            &:last-child {
+              background: url(../assets/phone.svg) no-repeat scroll right center;
+              background-size: 32px;
+            }
+          }
+        }
+        textarea {
+          border: none;
+          border-bottom: $disabled-color solid 1px;
+          margin-bottom: $padding_large;
+          resize: none;
+          overflow: auto;
+          height: 60px;
+          background: url(../assets/pen.svg) no-repeat scroll right center;
+          background-size: 32px;
+          padding-right: 38px;
+          padding-top: 1rem;
+          font-size: $normal_text_size;
+          font-weight: 300;
+          font-family: inherit;
+          &:focus {
+            outline: none;
+            border-bottom-width: 2px;
+          }
+        }
+
+        button {
+          width: 200px;
+          height: 56px;
+          border: none;
+          background-color: $red_color;
+          font-size: $l_font_size;
+          color: $main_color;
+          margin-top: $padding_large;
+          font-family: inherit;
+          position: relative;
+          cursor: pointer;
+          @include transition(box-shadow 0.3s);
+          @include radius(100px);
+          &::before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 4px;
+            width: 100%;
+            height: 100%;
+            background: no-repeat url("../assets/border_btn.svg");
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            background: no-repeat url("../assets/send.svg");
+            background-size: 28px;
+            width: 38px;
+            height: 38px;
+            @include transform(translateY(-40%));
+          }
+          &:hover {
+            box-shadow: 0 0 12px $red_color;
+          }
+        }
+      }
+    }
+
+    .store-app {
+      background-color: $background_color;
+      margin-top: calc($padding_large * 4);
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      padding: $padding_large;
+      @include radius($padding_large);
+      
+      .download-content {
+        flex-basis: 60%;
+        @include break-point(S) {
+          flex-basis: 100%;
+        }
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: $normal_text_size;
+          margin-bottom: calc($padding_large * 1.5);
+        }
+      }
+      .mobile {
+        flex-basis: 35%;
+        height: 320px;
+        position: relative;
+        @include break-point(S) {
+          display: none;
+        }
+        img {
+          height: 100%;
+          position: absolute;
+          bottom: -2.3rem;
+          left: 0;
+        }
+      }
+    }
+  }
+}
