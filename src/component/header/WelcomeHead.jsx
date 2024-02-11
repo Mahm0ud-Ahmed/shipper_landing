@@ -2,7 +2,7 @@ import welcomeImg from "../../assets/welcome_header.svg";
 import DownloadApp from "../common/DownloadApp";
 function WelcomeHead() {
   return (
-    <div className="welcome-head container row-flex center">
+<div className="welcome-head container row-flex center" >
       <div className="welcome-content">
         <div className="welcome-msg">
           <h1 className="h1">

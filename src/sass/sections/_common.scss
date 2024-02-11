@@ -2,6 +2,7 @@
 
 .download-app {
   justify-content: space-between;
+  gap: 12px;
   @include break-point(VS) {
     flex-direction: column;
     > div:first-child {
@@ -14,22 +15,6 @@
   }
   > div {
     flex-basis: 48%;
-    button {
-      width: 90%;
-      height: 52px;
-      padding: 8px;
-      background-color: $reverse-main_color;
-      border: none;
-      @include radius(100px);
-      cursor: pointer;
-      &:not(:last-child) {
-        margin-left: 0.5rem;
-      }
-
-      img {
-        width: 85%;
-      }
-    }
   }
 }
 

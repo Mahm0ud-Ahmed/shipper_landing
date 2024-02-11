@@ -19,7 +19,7 @@ function Footer() {
             </p>
           </div>
           <div className="footer-connect-us">
-            <h2 className="h2">تواصل معنا</h2>
+            <h2 className="h2 grd-b">تواصل معنا</h2>
 
             <div className="address">
               {addressInfo.map((item, index) => (

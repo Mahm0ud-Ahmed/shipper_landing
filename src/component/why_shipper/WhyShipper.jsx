@@ -5,13 +5,13 @@ import Clint from "../../assets/customer.svg";
 
 function WhyShipper() {
   return (
-    <section className="why-shipper">
+    <section className="why-shipper" id="why-shipper">
       <div className="row-flex container">
         <div className="shipper-truck">
           <img src={Truck} alt="truck" />
         </div>
         <div className="why-content">
-          <h2 className="title h2">لماذا شيبر؟</h2>
+          <h2 className="title h2 grd-b">لماذا شيبر؟</h2>
           <p className="h2-m">
             إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر وﺗﻢ
             اﺧﺘﻴﺎرﻫﻢ ﺑﻌﻨﺎﻳﺔ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺔ ذات ﺟﻮدة ﻋﺎﻟﻴﺔ وأﺳﻌﺎر ﻣﻨﺎﻓﺴﺔ

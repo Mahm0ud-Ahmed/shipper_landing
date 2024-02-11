@@ -12,31 +12,6 @@
     gap: calc($padding_large * 3);
     margin-top: calc($padding_large * 5);
     color: $reverse-main_color;
-    .instructions {
-      h2 {
-        position: relative;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin-bottom: $padding_large;
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: -4px;
-          width: 100%;
-          height: 4px;
-          @include radius(100px);
-          background: linear-gradient(
-            to left,
-            $red_color 0%,
-            $red_color 20%,
-            transparent 20%,
-            transparent 30%,
-            $red_color 30%,
-            $red_color 100%
-          );
-        }
-      }
-    }
 
     .item {
       height: 320px;

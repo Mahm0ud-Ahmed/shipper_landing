@@ -4,10 +4,10 @@ import Feature from "../../assets/feature.svg";
 
 function ShipmentStep() {
   return (
-    <section className="shipment-steps">
+    <section className="shipment-steps" id="our-us">
       <div className="container col-flex">
         <div className="intro col-flex center">
-          <h2 className="h2">أنقل كل شئ في ثلاث خطوات</h2>
+          <h2 className="h2 grd-b">أنقل كل شئ في ثلاث خطوات</h2>
           <p className="h2-m">
             إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر وﺗﻢ
             اﺧﺘﻴﺎرﻫﻢ ﺑﻌﻨﺎﻳﺔ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺔ ذات ﺟﻮدة ﻋﺎﻟﻴﺔ وأﺳﻌﺎر ﻣﻨﺎﻓﺴﺔ

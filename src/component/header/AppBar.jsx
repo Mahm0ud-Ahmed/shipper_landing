@@ -5,7 +5,7 @@ function AppBar() {
   return (
     <div className="app-bar container row-flex">
       <div className="logo">
-        <a href="#">
+        <a href="#welcome-shipper">
           <img src={logo} alt="shipper-logo" />
         </a>
       </div>
@@ -14,8 +14,8 @@ function AppBar() {
         <nav>
           <ul className="row-flex">
             {navLinks.map((link) => (
-              <li key={link}>
-                <a href="#">{link}</a>
+              <li key={link.title}>
+                <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>
@@ -25,7 +25,7 @@ function AppBar() {
           <button className="lang row-flex center">
             <img src={lang} alt="language" /> En
           </button>
-          <button className="connect">تواصل معنا</button>
+          <button className="connect btn-mark">تواصل معنا</button>
         </div>
       </div>
     </div>
@@ -34,4 +34,10 @@ function AppBar() {
 
 export default AppBar;
 
-let navLinks = ["الرئيسية", "لماذا شيبر", "من نحن", "خدمات شيبر", "تواصل معنا"];
+let navLinks = [
+  { title: "الرئيسية", id: "welcome-shipper" },
+  { title: "لماذا شيبر", id: "why-shipper" },
+  { title: "من نحن", id: "our-us" },
+  { title: "خدمات شيبر", id: "services" },
+  { title: "تواصل معنا", id: "connect-us" },
+];

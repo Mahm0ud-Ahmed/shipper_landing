@@ -29,29 +29,6 @@
 
   .why-content {
     flex-basis: 45%;
-    h2 {
-      position: relative;
-      width: -moz-fit-content;
-      width: fit-content;
-      margin-bottom: $padding_large;
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 4px;
-        @include radius(100px);
-        background: linear-gradient(
-          to left,
-          $red_color 0%,
-          $red_color 20%,
-          transparent 20%,
-          transparent 30%,
-          $red_color 30%,
-          $red_color 100%
-        );
-      }
-    }
 
     .achievements {
       display: grid;

@@ -21,29 +21,6 @@
             margin: 0 auto;
           }
         }
-        h2 {
-          position: relative;
-          width: -moz-fit-content;
-          width: fit-content;
-          margin-bottom: $padding_large;
-          &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 4px;
-            @include radius(100px);
-            background: linear-gradient(
-              to left,
-              $red_color 0%,
-              $red_color 20%,
-              transparent 20%,
-              transparent 30%,
-              $red_color 30%,
-              $red_color 100%
-            );
-          }
-        }
         .msg {
           margin-bottom: $padding_large;
           p {
@@ -111,25 +88,7 @@
         button {
           width: 200px;
           height: 56px;
-          border: none;
-          background-color: $red_color;
-          font-size: $l_font_size;
-          color: $main_color;
           margin-top: $padding_large;
-          font-family: inherit;
-          position: relative;
-          cursor: pointer;
-          @include transition(box-shadow 0.3s);
-          @include radius(100px);
-          &::before {
-            content: "";
-            position: absolute;
-            left: 6px;
-            top: 4px;
-            width: 100%;
-            height: 100%;
-            background: no-repeat url("../assets/border_btn.svg");
-          }
           &::after {
             content: "";
             position: absolute;
@@ -140,9 +99,6 @@
             width: 38px;
             height: 38px;
             @include transform(translateY(-40%));
-          }
-          &:hover {
-            box-shadow: 0 0 12px $red_color;
           }
         }
       }

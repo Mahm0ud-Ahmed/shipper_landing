@@ -1,33 +1,26 @@
 import googlePlay from "../../assets/google_play.svg";
 import appStore from "../../assets/app_store.svg";
+import StoreBtn from "./StoreBtn";
 
 function DownloadApp() {
   return (
     <div className="download-app row-flex">
-          <div className="user-app col-flex center">
-            <h2>تطبيق المستخدم</h2>
-            <div className="download-btn row-flex center">
-              <button>
-                <img src={googlePlay} alt="google play" />
-              </button>
-              <button>
-                <img src={appStore} alt="app store" />
-              </button>
-            </div>
-          </div>
-          <div className="driver-app col-flex center">
-            <h2>تطبيق الكابتن</h2>
-            <div className="download-btn row-flex center">
-              <button>
-                <img src={googlePlay} alt="google play" />
-              </button>
-              <button>
-                <img src={appStore} alt="app store" />
-              </button>
-            </div>
-          </div>
+      <div className="user-app col-flex center">
+        <h2>تطبيق المستخدم</h2>
+        <div className="download-btn row-flex center">
+          <StoreBtn icon={googlePlay} alt="google play" link="https://play.google.com/store/apps/details?id=com.shipperapp.user.app" />
+          <StoreBtn icon={appStore} alt="app store" link="https://apps.apple.com/us/app/shipper/id6449437473" />
         </div>
-  )
+      </div>
+      <div className="driver-app col-flex center">
+        <h2>تطبيق الكابتن</h2>
+        <div className="download-btn row-flex center">
+          <StoreBtn icon={googlePlay} alt="google play" link="https://play.google.com/store/apps/details?id=com.shipperapp.driver.app" />
+          <StoreBtn icon={appStore} alt="app store" link="https://apps.apple.com/us/app/shipper-driver/id6456466091" />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default DownloadApp
+export default DownloadApp;

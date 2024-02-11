@@ -3,7 +3,7 @@ import WelcomeHead from "./WelcomeHead";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header" id="welcome-shipper">
       <AppBar />
       <WelcomeHead />
     </header>
