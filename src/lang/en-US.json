@@ -1,0 +1,50 @@
+{
+    "app_title": "Shipper",
+    "app_bar_home": "Home",
+    "app_bar_why": "Why Shipper",
+    "app_bar_our_us": "Our Us",
+    "app_bar_services": "Services",
+    "app_bar_contact": "Contact Us",
+
+    "header_welcome_title_1": "The Easiest ",
+    "header_welcome_title_2": "and ",
+    "header_welcome_title_3": "Best ",
+    "header_welcome_title_4": "way ",
+    "header_welcome_title_5": "To move your household furniture",
+    "header_welcome_subtitle": "Feeling stressed about moving? Download Shipper app and leave the rest to us!",
+    "header_welcome_user_app": "User App",
+    "header_welcome_driver_app": "Driver App",
+
+    "why_shipper_achievement_title": "Our achievements in the Kingdom of Saudi Arabia include expansions and developments for Shipper, enabling them to provide quality services with high efficiency and exceptional customer satisfaction.",
+    "why_shipper_achievement_move": "Movements from location to location",
+    "why_shipper_achievement_collaborate": "Collaborations with factories and stores",
+    "why_shipper_achievement_satisfied": "Satisfied customers with our services",
+
+    "shipment_steps_title": "Move everything in three steps",
+    "shipment_steps_step_1": "Download the Shipper app",
+    "shipment_steps_step_2": "Create an account",
+    "shipment_steps_step_3": "Enjoy the features",
+
+    "order_steps_title": "Workflow",
+    "order_steps_subtitle": "Our achievements in the Kingdom of Saudi Arabia include pioneering and developing Shipper",
+    "order_steps_step_1": "Set your location",
+    "order_steps_step_2": "Select your shipment and belongings",
+    "order_steps_step_3": "Choose the payment method",
+    "order_steps_step_4": "Track your shipment",
+    "order_steps_step_5": "Receive the shipment",
+
+    "contact_us_any_question":"Do you have any inquiries?",
+    "contact_us_contact_now":"Feel free to contact us!",
+    "contact_us_input_hint_name":"Name:",
+    "contact_us_input_hint_phone":"Phone number:",
+    "contact_us_input_hint_area":"How can we assist you? Please feel comfortable telling us what you need!",
+    "contact_us_download_apps":"Download the Shipper app now and benefit from our services!",
+    "contact_us_lorem":"Do sunt fugiat consequat elit ut ea minim magna nisi nisi occaecat minim esse sit.",
+
+    "footer_copyright":"Shipper. All rights reserved.",
+    "footer_country":"Kingdom of Saudi Arabia",
+
+
+    "button_send_title": "Send"
+
+}

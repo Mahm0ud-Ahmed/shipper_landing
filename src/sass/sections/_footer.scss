@@ -37,7 +37,7 @@
             img {
               height: 100%;
               width: 38px;
-              margin-left: calc($padding_large / 1.5);
+              margin-inline-end: calc($padding_large / 1.5);
             }
             font-size: $normal_text_size;
             a {

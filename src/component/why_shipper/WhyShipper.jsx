@@ -2,8 +2,10 @@ import Truck from "../../assets/truck.svg";
 import Location from "../../assets/location.svg";
 import Office from "../../assets/office.svg";
 import Clint from "../../assets/customer.svg";
+import { FormattedMessage, useIntl } from "react-intl";
 
 function WhyShipper() {
+  const { locale } = useIntl();
   return (
     <section className="why-shipper" id="why-shipper">
       <div className="row-flex container">
@@ -11,10 +13,12 @@ function WhyShipper() {
           <img src={Truck} alt="truck" />
         </div>
         <div className="why-content">
-          <h2 className="title h2 grd-b">لماذا شيبر؟</h2>
+          <h2 className="title h2 grd-b">
+            <FormattedMessage id="app_bar_why" />
+            {locale === "en-US" ? "?" : "؟"}
+          </h2>
           <p className="h2-m">
-            إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر وﺗﻢ
-            اﺧﺘﻴﺎرﻫﻢ ﺑﻌﻨﺎﻳﺔ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺔ ذات ﺟﻮدة ﻋﺎﻟﻴﺔ وأﺳﻌﺎر ﻣﻨﺎﻓﺴﺔ
+            <FormattedMessage id="why_shipper_achievement_title" />
           </p>
           <div className="achievements">
             {achievements.map((achievement) => (
@@ -22,7 +26,9 @@ function WhyShipper() {
                 <img src={achievement.img} alt="icon" />
                 <div className="info">
                   <p>{achievement.counter}</p>
-                  <p>{achievement.title}</p>
+                  <p>
+                    <FormattedMessage id={achievement.title} />
+                  </p>
                 </div>
               </div>
             ))}
@@ -39,16 +45,16 @@ let achievements = [
   {
     img: Location,
     counter: 1178,
-    title: "نقلة من موقع لموقع",
+    title: "why_shipper_achievement_move",
   },
   {
     img: Office,
     counter: 122,
-    title: "تعاون مع مصنع ومتجر",
+    title: "why_shipper_achievement_collaborate",
   },
   {
     img: Clint,
     counter: 100,
-    title: "عميل راضي بخدماتنا",
+    title: "why_shipper_achievement_satisfied",
   },
 ];

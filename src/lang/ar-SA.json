@@ -1,0 +1,50 @@
+{
+    "app_title": "شيبر",
+    "app_bar_home": "الرئيسية",
+    "app_bar_why": "لماذا شيبر",
+    "app_bar_our_us": "من نحن",
+    "app_bar_services": "خدمات شيبر",
+    "app_bar_contact": "تواصل معنا",
+
+    "header_welcome_title_1": "الطريقة ",
+    "header_welcome_title_2": "الأسهل",
+    "header_welcome_title_3": " و",
+    "header_welcome_title_4": "الأفضل ",
+    "header_welcome_title_5": " لنقل أثاث منزلك",
+    "header_welcome_subtitle": "شايل هم النقل؟ حمل تطبيق شيبر.. وازهل الباقي علينا",
+    "header_welcome_user_app": "تطبيق المستخدم",
+    "header_welcome_driver_app": "تطبيق الكابتن",
+
+    "why_shipper_achievement_title": "إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر وﺗﻢ اﺧﺘﻴﺎرﻫﻢ ﺑﻌﻨﺎﻳﺔ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺔ ذات ﺟﻮدة ﻋﺎﻟﻴﺔ وأﺳﻌﺎر ﻣﻨﺎﻓﺴﺔ",
+    "why_shipper_achievement_move": "نقلة من موقع لموقع",
+    "why_shipper_achievement_collaborate": "تعاون مع مصنع ومتجر",
+    "why_shipper_achievement_satisfied": "عميل راضي بخدماتنا",
+
+    "shipment_steps_title": "أنقل كل شئ في ثلاث خطوات",
+    "shipment_steps_step_1": "تنزيل تطبيق شيبر",
+    "shipment_steps_step_2": "إنشاء حساب",
+    "shipment_steps_step_3": "استمتع بالمميزات",
+
+    "order_steps_title": "آلية العمل",
+    "order_steps_subtitle": "إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر",
+    "order_steps_step_1": "حدد موقعك",
+    "order_steps_step_2": "حدد شحنتك ومنقولاتك",
+    "order_steps_step_3": "حدد طريقة الدفع",
+    "order_steps_step_4": "إمكانية تتبع الشحنة",
+    "order_steps_step_5": "استقبال الشحنة",
+
+    "contact_us_any_question":"هل لديك أي استفسار؟",
+    "contact_us_contact_now":"لا تتردد في التواصل معنا!",
+    "contact_us_input_hint_name":"الاسم:",
+    "contact_us_input_hint_phone":"رقم الجوال:",
+    "contact_us_input_hint_area":"كيف يمكننا مساعدتك؟ أشعر بالراحة في إخبارنا بما تحتاجه!",
+    "contact_us_download_apps":"حمل تطبيق شيبر الآن واستفد من خدماتنا!",
+    "contact_us_lorem":"لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسكينغ إليت، سيد دو إيوسمود تيمبور إنسيديدينت أوت لابوريت و دولاري ماجنا اليكوا.",
+
+    "footer_copyright":"شيبر. جميع الحقوق محفوظة.",
+    "footer_country":"المملكة العربية السعودية",
+
+    "button_send_title": "إرسال"
+
+
+}

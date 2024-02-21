@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.svg";
 import Call from "../../assets/call.svg";
 import City from "../../assets/city_location.svg";
 import Mail from "../../assets/mail.svg";
+import { FormattedMessage } from "react-intl";
 
 function Footer() {
   return (
@@ -14,12 +15,13 @@ function Footer() {
               <img src={Logo} alt="logo" />
             </div>
             <p className="h2-m">
-              إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر
-              وﺗﻢ اﺧﺘﻴﺎرﻫﻢ ﺑﻌﻨﺎﻳﺔ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺔ ذات ﺟﻮدة ﻋﺎﻟﻴﺔ وأﺳﻌﺎر ﻣﻨﺎﻓﺴﺔ
+              <FormattedMessage id="why_shipper_achievement_title" />
             </p>
           </div>
           <div className="footer-connect-us">
-            <h2 className="h2 grd-b">تواصل معنا</h2>
+            <h2 className="h2 grd-b">
+              <FormattedMessage id="app_bar_contact" />
+            </h2>
 
             <div className="address">
               {addressInfo.map((item, index) => (
@@ -30,7 +32,9 @@ function Footer() {
                       {item.text.substring(item.text.indexOf(":") + 1)}
                     </a>
                   ) : (
-                    <span>{item.text}</span>
+                    <span>
+                      <FormattedMessage id={item.text} />
+                    </span>
                   )}
                 </div>
               ))}
@@ -40,7 +44,10 @@ function Footer() {
       </div>
       <div className="rights-reserved">
         <div className="container row-flex">
-          <p>© {new Date().getFullYear()} شيبر. جميع الحقوق محفوظة.</p>
+          <p>
+            © {new Date().getFullYear()}{" "}
+            <FormattedMessage id="footer_copyright" />
+          </p>
           <Social />
         </div>
       </div>
@@ -51,7 +58,7 @@ function Footer() {
 export default Footer;
 
 const addressInfo = [
-  { icon: City, text: "المملكة العربية السعودية" },
+  { icon: City, text: "footer_country" },
   { icon: Mail, text: "mailto:shipper@shipper.com" },
   { icon: Call, text: "tel:+966506895897" },
 ];

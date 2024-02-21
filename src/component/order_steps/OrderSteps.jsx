@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import Delivery from "../../assets/delivery.svg";
 import Location from "../../assets/select_location.svg";
 import Payment from "../../assets/select_payment.svg";
@@ -9,9 +10,11 @@ function OrderSteps() {
     <section className="order-steps" id="services">
       <div className="container">
         <div className="instructions">
-          <h2 className="h2 grd-b">آلية العمل</h2>
+          <h2 className="h2 grd-b">
+            <FormattedMessage id="order_steps_title" />
+          </h2>
           <p className="h2-m">
-            إنجازاتنا بالمملكة العربية السعودية ﺷﺮﻛﺎت وأﻓﺮاد ﻣﻮﺛﻘﻴﻦ ﻟﺪى شيبر
+            <FormattedMessage id="order_steps_subtitle" />
           </p>
         </div>
         {orderSteps.map((order, index) => (
@@ -21,7 +24,9 @@ function OrderSteps() {
             className="item col-flex"
           >
             <img src={order.img} alt="icon" />
-            <h2 className="h2-m">{order.title}</h2>
+            <h2 className="h2-m">
+              <FormattedMessage id={order.title} />
+            </h2>
           </div>
         ))}
       </div>
@@ -34,22 +39,22 @@ export default OrderSteps;
 let orderSteps = [
   {
     img: Location,
-    title: "حدد موقعك",
+    title: "order_steps_step_1",
   },
   {
     img: Shipment,
-    title: "حدد شحنتك ومنقولاتك",
+    title: "order_steps_step_2",
   },
   {
     img: Payment,
-    title: "حدد طريقة الدفع",
+    title: "order_steps_step_3",
   },
   {
     img: Tracking,
-    title: "إمكانية تتبع الشحنة",
+    title: "order_steps_step_4",
   },
   {
     img: Delivery,
-    title: "استقبال الشحنة",
+    title: "order_steps_step_5",
   },
 ];

@@ -22,6 +22,7 @@
       @include radius($padding_large);
       position: relative;
       background-color: $main-color;
+      text-align: center;
       &::before {
         content: "0" attr(data-index);
         position: absolute;
