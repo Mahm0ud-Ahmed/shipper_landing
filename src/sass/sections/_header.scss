@@ -15,6 +15,7 @@
     right: 0;
     top: 0;
     z-index: 10;
+    padding-block: $padding_large;
     background-color: $background-color;
     .logo {
       img {
@@ -162,9 +163,9 @@
 @include animate_element(mov-up-down) {
   0%,
   100% {
-    @include transform(translateY(30px));
+    @include transform(translateY(25px));
   }
   50% {
-    @include transform(translateY(-50px));
+    @include transform(translateY(-25px));
   }
 }
